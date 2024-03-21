@@ -28,3 +28,25 @@ main{
     padding: 2rem;
 }
 
+#authordom{
+    color: white;
+}
+
+#tagsdom{
+    color: #6466E9;
+    display: flex;
+    font-size: .625rem;
+}
+
+#tagsdom p {
+    border: 1px solid #6466E9;
+    border-radius: .6rem;
+    padding: .2rem .6rem;
+    margin: .7rem .5rem 1rem 0;
+}
+
+#quotedom{
+    color: #97A3B6;
+    font-size: 1.5rem;
+    text-align: center;
+}
