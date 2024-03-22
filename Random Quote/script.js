@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       // Access and use the quoteData outside of the function
       authorElement.textContent = quoteData.author;
       quoteElement.textContent = '"' + truncatedQuote + '"';
+      quoteElement.title = quoteData.quote
       tagsdom.innerHTML = ""
       quoteData.tags.forEach(element => {
           let tag  = document.createElement("p")
           tag.innerHTML = element
-          console.log(tag, quoteData.tags)
           tagsdom.appendChild(tag)
       });
     } catch (error) {
@@ -40,4 +40,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("redo").addEventListener("click", function(){
     updateQuote()
   });
+
+  document.getElementById("copy").addEventListener("click", function(){
+    navigator.clipboard.writeText(document.getElementById("quotedom").title)
+  })
 })
