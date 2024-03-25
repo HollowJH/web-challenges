@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alarado</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,35 +14,38 @@
         <img src="resources/alarado-icon-homepage.svg" alt="">
         <nav>
             <ul>
-                <li class="option"><a href="">About us</a></li>
+                <li class="option"><a href="" class="selected">About us</a></li>
                 <li class="option"><a href="">Product</a></li>
                 <li class="option"><a href="">Resource</a></li>
                 <li class="option"><a href="">Contact</a></li>
             </ul>
         </nav>
-        <input type="checkbox" name="theme" id="theme">
-        <label for="theme">
-            <img src="resources/Moon_fill.svg" alt="">
+        <label for="theme" class="switch">
+            <input type="checkbox" name="theme" id="theme">
+            <img src="resources/Moon_fill_light.svg" alt="">
             <img src="resources/Sun_fill.svg" alt="">
         </label>
+        
     </header>
     <main>
-        <h3>😎  Simple way to communicate</h3>
-        <h1>Actions for Accessibility in Design</h1>
-        <p>The fastest way to build and deploy websites with resusable components.</p>
-        <div class="buttons">
-            <button>GET STARTED</button>
-            <a href="">Get live demo</a>
+        <div class="left">
+            <h3>😎  Simple way to communicate</h3>
+            <h1>Actions for Accessibility in Design</h1>
+            <p>The fastest way to build and deploy websites with resusable components.</p>
+            <div class="buttons">
+                <button>GET STARTED</button>
+                <a href="">Get live demo</a>
+            </div>
+            <div class="perks">
+                <ul>
+                    <li class="check"><img src="resources/Done_ring_round_fill.svg" alt="Checkmark">No credit card required</li>
+                    <li class="check"><img src="resources/Done_ring_round_fill.svg" alt="Checkmark">No software to install</li>
+                </ul>
+            </div>
         </div>
-        <div class="perks">
-            <ul>
-                <li class="check"><img src="resources/Done_ring_round_fill.svg" alt="Checkmark">No credit card required</li>
-                <li class="check"><img src="resources/Done_ring_round_fill.svg" alt="Checkmark">No software to install</li>
-            </ul>
+        <div class="right">
+            <img class="hero" src="resources/hero-image-simple-homepage.png" alt="">
         </div>
-        <aside>
-            <img src="resources/hero-image-simple-homepage.png" alt="">
-        </aside>
     </main>
 </body>
 </html>
