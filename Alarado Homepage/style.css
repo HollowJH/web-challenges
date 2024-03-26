@@ -51,7 +51,7 @@ main{
 }
 
 .left{
-    margin-right: 14rem;
+    margin-right: 7rem;
 }
 
 .left h3{
@@ -96,6 +96,30 @@ button{
     margin-right: 1rem;
 }
 
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .hero{
     width: 90%;
+}
+
+@media (max-width: 1024px) {
+    header{
+        margin-left: -2.5rem;
+    }
+
+    main{
+        flex-direction: column;
+        margin-left: 2.75rem;
+        width: 100%;
+    }
+
+    .right{
+        order:-1;
+        justify-content: flex-start;
+    }
+
+
 }
